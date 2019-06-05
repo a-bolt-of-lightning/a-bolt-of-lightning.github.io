@@ -1,179 +1,72 @@
-
 body{
-
-    background-color: yellowgreen;
-    margin:0;
-    padding:0
-
-
+	align-content: center;
+	background-color: black;
 }
 
-.link-title{
-    text-decoration: none;
-    font-size: 24px;
-    color: rgb(30, 0, 70);
+.perspective-text-container{
+
+	border: 1px solid wheat;
+	display: flex;
+	align-content: center;
+	overflow: hidden;
+	justify-content: center;
+	height: 480px;
+	padding-top: 100px;
 }
 
-.container{
-    background-color: rosybrown;
+.perspective-text{
 
-    width: 780px;
-    height: 800px;
-    margin: 0 auto;
-    box-shadow: 0px 0px 20px 0px;
+	color: white;
+  font-family: Arial;
+  font-size: 64px;
+  font-weight: 900;
+  letter-spacing: -2px;
+	text-transform: uppercase;
+	user-select: none;
+	
 }
 
-.header{
-
-    /*border: 2px solid silver;*/
-    padding: 40px 0px 20px 40px;
+.perspective-line {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+p {
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.5s ease-in-out;
 }
 
-.menu{
-
-    background-color: blueviolet;
-    padding: 6px 0 6px 40px;
+.perspective-line:nth-child(odd) {
+  transform: skew(60deg, -30deg) scaleY(0.667);
 }
-.menu a{
-
-    color: hotpink;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: 'Arial Narrow', Helvetica, sans-serif;
+.perspective-line:nth-child(even) {
+  transform: skew(0deg, -30deg) scaleY(1.333);
 }
 
-.menu a:hover{
-    color: brown;
-    text-decoration: underline;
+.perspective-text:hover p{
+  transform: translate(0, -50px);
 }
 
-aside{
-    float: left;
-    width: 120px;
-    padding: 30px 0 0 40px;
+.perspective-line {
+  position: relative;
 }
-
-aside img{
-    
-    width: 100%;
-    border: solid 3px gold;
+.perspective-line:hover p{
+  transform: translate(0, -50px);
 }
-
-h1{
-    color:midnightblue;
-    font-weight: normal;
+.perspective-line:nth-child(1) {
+  left: 29px;
 }
-
-.main{
-    margin: 0 0 0 180px;
-    padding: 35px 40px 30px 0;
-    font-family: Georgia;
-    line-height: 18px;
-    text-emphasis: justify;
-
+.perspective-line:nth-child(2) {
+  left: 58px;
 }
-.main a:hover{
-    color: coral;
+.perspective-line:nth-child(3) {
+  left: 87px;
 }
-
-#home-image img{
-    width: 100%;
+.perspective-line:nth-child(4) {
+  left: 116px;
 }
-
-
-footer{
-    padding: 6px 40px 6px 40px;
-    background-color: rgb(42, 144, 202);
-    font-size: 13px;
-    text-decoration: right; 
-
-}
-
-
-footer a{
-    text-decoration: none;
-
-}
-
-.seperator{
-    color: gold;
-    font-size: 15px;
-}
-
-
-/******** about page style *********/
-
-#about-page #home-image img{
-
-    width: 70%;
-    float: left;
-    margin-bottom: 17px;
-}
-
-#about-page #profile-info{
-
-    width: 20%;
-    float: right;
-    margin: 5%;
-    color: springgreen;
-    /*** it was 5px ***/
-
-}
-
-#about-page .description {
-
-    clear: both;
-
-}
-
-/******** contact page style *********/
-
-#contact #form {
-
-    /*border: 2px solid;*/
-    margin: 0 auto;
-    padding: 10px 10px 10px 10px;
-    width: 500px;
-}
-
-#contact .page-heading{
-
-    margin: 0 auto;
-    /*border: 2px solid;*/
-    text-align: center;
-    height: 50px;
-}
-
-
-#contact #form input{
-
-    width: 100%;
-    border-radius: 5px;
-    height: 20px;
-    background-color: rgb(141, 145, 136);
-
-}
-
-#contact #form #message-box{
-
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
-    border-radius: 5px;
-    background-color: rgb(141, 145, 136);
-
-}
-
-#contact #form label {
-
-    color: chartreuse;
-    font-family: monospace;
-    font-size: 23px;
-}
-
-#contact #form #submit-button{
-
-    height: 30px;
-    text-align: center;
-    color: darkgreen;
-    background: darkkhaki;
+.perspective-line:nth-child(5) {
+  left: 145px;
 }
