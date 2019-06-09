@@ -5,12 +5,12 @@ body{
 
 .perspective-text-container{
 
-	border: 1px solid wheat;
+	border: 1px solid rgb(6, 0, 97);
 	display: flex;
 	align-content: center;
 	overflow: hidden;
 	justify-content: center;
-	height: 480px;
+	height: 520px;
 	padding-top: 100px;
 }
 
@@ -69,4 +69,24 @@ p {
 }
 .perspective-line:nth-child(5) {
   left: 145px;
+}
+
+.icon-link{
+  font-size: 50px;
+  color: rgb(6, 0, 97);
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.icon-link:hover{
+  color: rgb(12, 0, 179);
+  font-size: 53px;
+
+}
+
+.link-container{
+
+  margin-top: 20px;
+  height: 54px;
+  background-color: white;
 }
